@@ -11,10 +11,9 @@ import pandas as pd
 import time
 import multiprocessing
 
+from DinInsurance import NPV_production, option, growth_model #attached in this repository
 
-from sim_cor_p import random_simulation, cor_simulation, simulation_results
-from DinInsurance import NPV_production, option, growth_model
-
+from sim_cor_p import random_simulation, cor_simulation, simulation_results #download it in https://github.com/manulg1/SimCor.git
 
 # The process have been divided in three parts : Data Collection, Main Function and Testing process
 
