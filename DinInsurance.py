@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 13 14:11:19 2019
-
 @author: Manuel Luna
 """
 
@@ -12,8 +10,11 @@ from scipy import stats
 import random
 
 
+
 '''
 Production Value
+
+Firstly, this package includes a function that allows users to estimate the Expected Net Present Value and Standar Deviation from a set of simulations on the biological and market evolution of an aquaculture farm
 '''
 class NPV_production:
     def __init__(self, inicial_weight, inicial_fishes, temp_sim, price_sim, day):
@@ -35,6 +36,11 @@ class NPV_production:
         self.mean_npv = np.mean(npv)
         self.std_npv = np.std(npv)
         
+'''
+Financial Options
+
+Secondly, it include a simple function to calculate the main variables of financial options
+'''
 
 class option:
     """
@@ -76,11 +82,10 @@ class option:
         self.p_delta = delta
 
 
-
-
 '''
-Growth
+Lastly, we propose two funcions to aproximate the biological and economic evolution of aquaculture farms.
 '''
+
 class growth_model:
     def __init__(self, inicial_weight, inicial_fishes):
         self.in_weight = inicial_weight
